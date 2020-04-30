@@ -1,0 +1,17 @@
+1-SELECT * from  actor;
+2-SELECT * from  actor WHERE first_name = 'john';
+3-SELECT * from  actor WHERE last_name = 'Neeson';
+4-SELECT * from actor where actor_id%10;
+5-SELECT description from film where film_id = 100;
+6-SELECT * from film where rating= 'R';
+7-SELECT * from film where rating != 'R';
+8-select length FROM film WHERE length IS NOT NULL ORDER BY length  LIMIT 10;
+9-select title FROM film WHERE length IS NOT NULL ORDER BY length  LIMIT 10;
+10-select title FROM film WHERE special_features LIKE '%Deleted Scenes%';
+11-SELECT DISTINCT COUNT(last_name) from actor;
+15-select release_year FROM film WHERE title = 'academy dinosaur';
+16-SELECT AVG(length)from film;
+18-select count(film_id) from film where description like '%robot%';
+19- select title FROM film WHERE length ORDER BY length DESC;
+20-select count(film_id) from film where release_year = '2010';
+21-select count(name) from category where name = 'Horror';
